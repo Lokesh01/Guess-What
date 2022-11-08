@@ -15,11 +15,11 @@ const HangmanWords = ({
     <div
       style={{
         display: "flex",
-        gap: ".25rem",
+        gap: ".25em",
         fontSize: "6rem",
         fontWeight: "bold",
-        fontFamily: "monospace",
         textTransform: "uppercase",
+        fontFamily: "monospace",
       }}
     >
       {wordToGuess.split("").map((letter, idx) => (

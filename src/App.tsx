@@ -77,7 +77,6 @@ function App() {
   return (
     <div className="App">
       <div className="main_heading">
-        <h1>Guess What ?</h1>
         {isWinner && "You Won! : Refresh to try again "}
         {isLoser && `Sorry You Lost! : Refresh to try again `}
       </div>

@@ -5,11 +5,11 @@ const Head = (
     style={{
       width: "50px",
       height: "50px",
-      position: "absolute",
-      border: "10px solid black",
       borderRadius: "100%",
-      right: "-30px",
+      border: "10px solid black",
+      position: "absolute",
       top: "50px",
+      right: "-30px",
     }}
   />
 );
@@ -17,12 +17,12 @@ const Head = (
 const Body = (
   <div
     style={{
-      position: "absolute",
       width: "10px",
       height: "100px",
-      backgroundColor: "black",
-      right: 0,
+      background: "black",
+      position: "absolute",
       top: "120px",
+      right: 0,
     }}
   />
 );
@@ -30,12 +30,12 @@ const Body = (
 const Right_Arm = (
   <div
     style={{
-      position: "absolute",
       width: "100px",
       height: "10px",
-      backgroundColor: "black",
-      right: "-100px",
+      background: "black",
+      position: "absolute",
       top: "150px",
+      right: "-100px",
       rotate: "-30deg",
       transformOrigin: "left bottom",
     }}
@@ -45,12 +45,12 @@ const Right_Arm = (
 const Left_Arm = (
   <div
     style={{
-      position: "absolute",
       width: "100px",
       height: "10px",
-      backgroundColor: "black",
-      right: "10px",
+      background: "black",
+      position: "absolute",
       top: "150px",
+      right: "10px",
       rotate: "30deg",
       transformOrigin: "right bottom",
     }}
@@ -99,33 +99,31 @@ const HangmanImage = ({ noOfLives }: hangmanDrawingProps) => {
       {bodyParts.slice(0, noOfLives)}
       <div
         style={{
-          backgroundColor: "black",
           height: "50px",
           width: "10px",
+          background: "black",
           position: "absolute",
-          right: 0,
           top: 0,
+          right: 0,
         }}
       />
       <div
         style={{
-          backgroundColor: "black",
           height: "10px",
           width: "200px",
+          background: "black",
           marginLeft: "120px",
         }}
       />
       <div
         style={{
-          backgroundColor: "black",
           height: "400px",
           width: "10px",
+          background: "black",
           marginLeft: "120px",
         }}
       />
-      <div
-        style={{ backgroundColor: "black", height: "10px", width: "250px" }}
-      />
+      <div style={{ height: "10px", width: "250px", background: "black" }} />
     </div>
   );
 };
